@@ -141,7 +141,8 @@ footer{
     margin: 10px;
 }
 i{
-    font-size: 20px;
+    font-size: 35px;
+    color: #fff;
 }
 .contatos i:hover{
     color: orange;
