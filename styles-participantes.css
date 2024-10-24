@@ -4,7 +4,21 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-
+/*scroll do site */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(31, 31, 31);
+}
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #474747;
+}
 h1{
     margin-right: 550px;
 }
@@ -86,11 +100,31 @@ main {
 
 #add-participante button {
     padding: 10px 15px;
-    background-color: #35424a;
+    background-color: #000;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+/* botão de remover */
+.remove-btn {
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.5s, transform 0.5s; /* Animação para cor de fundo e transformação */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.remove-btn:hover {
+    background-color: #ff1a1a; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Efeito de animação ao clicar */
+.remove-btn:active {
+    transform: scale(0.95); /* Reduz o tamanho do botão ao clicar */
 }
 
 footer{

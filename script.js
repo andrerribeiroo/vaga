@@ -19,8 +19,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Criando um novo elemento de lista para o participante
         const li = document.createElement("li");
-        li.innerHTML = `<p>Nome: ${nome}</p><p>Email: ${email}</p>`;
+        li.innerHTML = `
+            <p>Nome: ${nome}</p>
+            <p>Email: ${email}</p>
+            <button class="remove-btn">Remover</button>
+        `;
         participantesUl.appendChild(li);
+
+        // Adicionando o evento de clique no botão de remoção
+        const removeBtn = li.querySelector(".remove-btn");
+        removeBtn.addEventListener("click", () => {
+            participantesUl.removeChild(li);
+        });
 
         // Limpar o formulário
         form.reset();
